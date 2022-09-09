@@ -160,3 +160,22 @@ function incrementUserScore() {
     resetAll();
   }
 }
+
+/**
+ * Reset all and start from scratch
+ */
+ const resetChoice = document.getElementById('reset-btn').addEventListener('click', function () {
+    document.getElementById('computer-choice').innerHTML = '';
+    document.getElementById('user-choice').innerHTML = '';
+    document.getElementById('result').innerHTML = '';
+    document.getElementById('computer-score').innerHTML = '0';
+    document.getElementById('user-score').innerHTML = '0';
+});
+
+function resetAll(){
+    document.getElementById('computer-choice').innerHTML = '';
+    document.getElementById('user-choice').innerHTML = '';
+    document.getElementById('result').innerHTML = '';
+    document.getElementById('computer-score').innerHTML = '0';
+    document.getElementById('user-score').innerHTML = '0';
+ } 
