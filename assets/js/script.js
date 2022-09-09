@@ -22,11 +22,30 @@ let result
   }))
 
 
-
 /**
- *  Generate computer choice
+ * Generate computer choice with random number from 1-5
+ * number is equal to name 
  */
-function generateComputerChoice()
+function generateComputerChoice() {
+    const randomNumber = Math.floor(Math.random() * 5) + 1 
+    
+    if (randomNumber === 1) {
+      computerChoice = 'rock'
+    }
+    if (randomNumber === 2) {
+      computerChoice = 'scissors'
+    }
+    if (randomNumber === 3) {
+      computerChoice = 'paper'
+    }
+    if (randomNumber === 4) {
+      computerChoice = 'spok'
+    }
+    if (randomNumber === 5) {
+      computerChoice = 'lizard'
+    }
+    computerChoiceDisplay.innerHTML = computerChoice
+  }
 
 
 /**
@@ -49,3 +68,5 @@ function getResult()
  * Reset all and start over
  */
  function resetAll()
+
+ 
