@@ -9,13 +9,12 @@ body {
     text-align: center;
 }
 
-.versus {
+.versus-area {
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 }
 
-.btn {
+.picture-area  > button {
     background: none;
 }
-

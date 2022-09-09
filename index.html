@@ -10,33 +10,25 @@
 </head>
 <body>
     <h1>The Rock Spock Dude</h1>
-    <section>
-        <div id="game-area">
-            <div>
-                <h2>Winner: <span id="winner"></span></h2>
-            </div>
-            <div class="versus">
-                <h3>User choice: <span id="user-choice"></span></h3>
-                <h2>VS</h2>
-                <h3>Computer Choice: <span id="computer-choice"></span></h3>
-            </div>
-            <div>
-                <button class="btn" aria-label="rock" id="rock"><img src="assets/images/rock.png" alt="rock"></button>
-                <button class="btn" aria-label="paper" id="paper"><img src="assets/images/paper.png" alt="paper"></button>
-                <button class="btn" aria-label="scissor" id="scissor"><img src="assets/images/scissor.png" alt="scissor"></button>
-                <button class="btn" aria-label="spock" id="spock"><img src="assets/images/spock.png" alt="spock"></button>
-                <button class="btn" aria-label="lizard" id="lizard"><img src="assets/images/lizard.png" alt="lizard"></button>
-            </div>
-            <div>
-                <h3>User Score: <span id="user-score">0</span></h3>
-                <h3>Computer Score: <span id="computer-score">0</span></h3>
-            </div>
-            <div>
-                <button class="btn-reset" aria-label="reset" id="reset">Reset Score</button>
-            </div>
+    <div>
+        <h2>Computer Choice: <span id="computer-choice"></span></h2>
+        <h2>Your Choice: <span id="user-choice"></span></h2>
+        <h2>Result: <span id="result"></span></h2>
+
+        <button class="btn" id="rock">rock</button>
+        <button class="btn" id="paper">paper</button>
+        <button class="btn" id="scissors">scissors</button>
+        <button class="btn" id="spok">spok</button>
+        <button class="btn" id="lizard">lizard</button>
+
+        <div class="score-area">
+            <h3>User Score: <span id="user-score">0</span></h3>
+            <h3>Computer Score: <span id="computer-score">0</span></h3>
         </div>
-    </section>
-    
+        <div class="startover-area">
+          <button id="reset-btn">Reset</button>
+        </div>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
