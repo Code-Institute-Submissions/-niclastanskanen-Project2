@@ -5,5 +5,17 @@ body {
     background-repeat: no-repeat;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    margin: 2vh;
+    text-align: center;
+}
+
+.versus {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.btn {
+    background: none;
 }
 
