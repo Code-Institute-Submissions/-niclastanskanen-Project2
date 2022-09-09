@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
 body {
     background-image: url("../images/background-gradient.png");
     background-repeat: no-repeat;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
