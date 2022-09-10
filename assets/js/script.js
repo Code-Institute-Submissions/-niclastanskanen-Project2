@@ -142,30 +142,38 @@ function getResult() {
   resultDisplay.innerHTML = result
 }
 
-
-function incrementCompScore(myresult) {
-  let oldScore = parseInt(document.getElementById('computer-score').innerText);
-  document.getElementById('computer-score').innerText = ++oldScore;
-   if (oldScore == '5') {
-    alert('You are trash!');
-    resetAll();
-  }
-}
-
-function incrementUserScore(myresult) {
-  let oldScore = parseInt(document.getElementById('user-score').innerText);
-  document.getElementById('user-score').innerText = ++oldScore;
-  if (oldScore == '5') {
-    alert('You are the Rock Spock Dude!');
-    resetAll();
-  }
-}
-
 /**
  * Incresment of score +1 
  * Add to old score with +1
  * Game is over at score 5.
  */
+
+function incrementCompScore() {
+  let oldScore = parseInt(document.getElementById('computer-score').innerText);
+  document.getElementById('computer-score').innerText = ++oldScore;
+   if (oldScore == '5') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'You are TRASH!',
+      footer: '<a href="">Why am i trash?</a>'
+    });
+    resetAll();
+  }
+}
+
+function incrementUserScore() {
+  let oldScore = parseInt(document.getElementById('user-score').innerText);
+  document.getElementById('user-score').innerText = ++oldScore;
+  if (oldScore == '5') {
+    Swal.fire({
+      icon: 'success',
+      title: 'You are the Rock Spock Dude!',
+      text: 'Play again?',
+    })
+    resetAll();
+  }
+}
 
 /**
  * Reset all and start from scratch
