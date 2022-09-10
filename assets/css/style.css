@@ -26,6 +26,9 @@ h1 {
     align-items: center;
     width: 100%;
 }
+ #user-choice, #computer-choice, #result {
+font-size: x-large;
+ }
 
 .grid {
     display: grid;
@@ -103,4 +106,21 @@ h1 {
     cursor: pointer;
     margin: 0;
     padding: 0;
+}
+
+
+/* For medium screen size from 840px wide and down*/
+@media screen and (max-width: 840px) {
+    .game-button > button > img {
+        width: 70%;
+    }
+
+    .modal-content {
+        width: 75%;
+}
+
+.modal {
+    padding-top: 50px;
+}
+
 }
