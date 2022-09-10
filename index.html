@@ -10,23 +10,31 @@
 </head>
 <body>
     <h1>The Rock Spock Dude</h1>
-    <div>
-        <h2>Computer Choice: <span id="computer-choice"></span></h2>
-        <h2>Your Choice: <span id="user-choice"></span></h2>
-        <h2>Result: <span id="result"></span></h2>
-
-        <button class="btn" id="rock">rock</button>
-        <button class="btn" id="paper">paper</button>
-        <button class="btn" id="scissors">scissors</button>
-        <button class="btn" id="spok">spok</button>
-        <button class="btn" id="lizard">lizard</button>
-
+    <div class="game-area">
+        <div>
+            <h2>Result: <span id="result"></span></h2>
+        </div>
+        <div class="versus-area">
+            <h3>Your Choice: <span id="user-choice"></span></h3>
+            <h1>VS</h1>
+            <h3>Computer Choice: <span id="computer-choice"></span></h3>
+        </div>
+        <div class="game-button">
+            <button class="btn" id="rock">rock</button>
+            <button class="btn" id="paper">paper</button>
+            <button class="btn" id="scissors">scissors</button>
+            <button class="btn" id="spok">spok</button>
+            <button class="btn" id="lizard">lizard</button>
+        </div>    
         <div class="score-area">
             <h3>User Score: <span id="user-score">0</span></h3>
             <h3>Computer Score: <span id="computer-score">0</span></h3>
         </div>
         <div class="reset-area">
             <button id="reset-btn" aria-label="reset">Reset</button>
+        </div>
+        <div id="dude">
+            <img src="assets/images/dude.png" alt="space dude">
         </div>
     </div>
     <script src="assets/js/script.js"></script>

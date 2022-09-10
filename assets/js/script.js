@@ -32,10 +32,10 @@
      computerChoice = 'rock'
    }
    if (randomNumber === 2) {
-     computerChoice = 'scissors'
+     computerChoice = 'paper'
    }
    if (randomNumber === 3) {
-     computerChoice = 'paper'
+     computerChoice = 'scissor'
    }
    if (randomNumber === 4) {
      computerChoice = 'spok'

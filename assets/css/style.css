@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 
 body {
     background-image: url("../images/background-gradient.png");
@@ -9,13 +9,42 @@ body {
     text-align: center;
 }
 
-.versus-area {
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+h1, .game-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.picture-area  > button {
-    background: none;
+
+.game-area {
+    background-color: rgba( 0, 0, 0, 0.5);
+    border-radius: 50% 15% / 20% 40%;
+    margin: 2vh;
+    padding: 10%;
 }
-*/
+
+
+.versus-area {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+}
+
+
+.score-area {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10%;
+}
+
+.reset-area {
+    display: flex;
+    justify-content: center;
+}
+
+#dude {
+        padding: 5%;
+        display: flex;
+        justify-content: flex-end;
+}
