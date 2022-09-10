@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 
-* {
-    border: none;
-}
-
 body {
     background: #de6161; 
     background: -webkit-linear-gradient(to top, #2657eb, #de6161);  
@@ -34,6 +30,24 @@ align-items: center;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 align-items: center;
+grid-gap: 5vh;
+}
+
+#reset-btn, #myBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 104px;
+    height: 104px;
+    background: #BE5869;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 10px 10px 33px #403a3e;
+    outline: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
 }
 
 /* How To Play (background) */
@@ -75,3 +89,11 @@ align-items: center;
     text-decoration: none;
     cursor: pointer;
   }
+
+  .btn {
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+    }

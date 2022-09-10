@@ -180,6 +180,10 @@ function resetAll(){
     document.getElementById('user-score').innerHTML = '0';
  } 
 
+
+ /**
+  * How to play pop up
+  */
 // Get the modal
 var modal = document.getElementById("myModal");
 
