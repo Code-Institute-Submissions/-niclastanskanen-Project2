@@ -1,5 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap'); 
 
+/* Body with gradient and backup color if browser not support/error gradient*/
 body {
     background: #de6161;
     background: -webkit-linear-gradient(to top, #2657eb, #de6161);
@@ -13,6 +14,7 @@ h1 {
     margin: 5%;
 }
 
+/* Game area */
 .game-area {
     display: grid;
     justify-content: space-evenly;
@@ -26,6 +28,7 @@ h1 {
     align-items: center;
     width: 100%;
 }
+
  #user-choice, #computer-choice, #result {
 font-size: x-large;
  }
@@ -37,6 +40,7 @@ font-size: x-large;
     grid-gap: 5vh;
 }
 
+/* Reset btn amd how to play button design */
 #reset-btn,
 #myBtn {
     display: flex;
@@ -55,12 +59,13 @@ font-size: x-large;
     cursor: pointer;
 }
 
+/* Footer */
 #footer {
     font-size: smaller;
     padding: 10px;
 }
 
-/* How To Play (background) */
+/* How To Play Pop up(background) */
 .modal {
     display: none;
     position: fixed;
@@ -117,10 +122,9 @@ font-size: x-large;
 
     .modal-content {
         width: 75%;
-}
+    }
 
-.modal {
-    padding-top: 50px;
-}
-
+    .modal {
+        padding-top: 50px;
+    }
 }

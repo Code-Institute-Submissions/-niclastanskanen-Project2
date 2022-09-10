@@ -9,9 +9,6 @@ let userChoice
 let computerChoice
 let result
 
-
-
-
 /**
  * For every button with className 'btn' for event listener for click
  * through a event and target correct ID and saving it to userChoice
@@ -49,12 +46,11 @@ function generateComputerChoice() {
   computerChoiceDisplay.innerHTML = computerChoice
 }
 
-
 /**
  * Computer & user choice with incresment in Score and result display message
  */
 function getResult() {
-  
+
   if (computerChoice === userChoice) {
     result = 'its a draw!'
   }
@@ -147,11 +143,10 @@ function getResult() {
  * Add to old score with +1
  * Game is over at score 5.
  */
-
 function incrementCompScore() {
   let oldScore = parseInt(document.getElementById('computer-score').innerText);
   document.getElementById('computer-score').innerText = ++oldScore;
-   if (oldScore == '5') {
+  if (oldScore == '5') {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
@@ -193,7 +188,6 @@ function resetAll() {
   document.getElementById('computer-score').innerHTML = '0';
   document.getElementById('user-score').innerHTML = '0';
 }
-
 
 /**
  * How to play pop up modal
