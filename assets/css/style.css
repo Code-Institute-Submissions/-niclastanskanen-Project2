@@ -1,5 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap'); 
 
+html {
+    min-height: -webkit-fill-available;
+}
+
 /* Body with gradient and backup color if browser not support/error gradient*/
 body {
     background: #de6161;
@@ -131,3 +135,15 @@ font-size: x-large;
         padding-top: 50px;
     }
 }
+
+/* For medium screen size from 320px wide and down*/
+@media screen and (max-width: 320px) {
+    .versus-area {
+        display: block;
+    }
+
+    .game-button {
+        display: flex;
+    }
+}
+
