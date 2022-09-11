@@ -152,7 +152,7 @@ function incrementCompScore() {
       icon: 'error',
       title: 'Oops...',
       text: 'You are TRASH!',
-      footer: '<a href="">Why am i trash?</a>'
+      footer: '<a href="">Why am I trash?</a>'
     });
     resetAll();
   }
