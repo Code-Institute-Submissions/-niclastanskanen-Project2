@@ -40,7 +40,7 @@ font-size: x-large;
     grid-gap: 5vh;
 }
 
-/* Reset btn amd how to play button design */
+/* Reset btn and how to play button design */
 #reset-btn,
 #myBtn {
     display: flex;
@@ -65,7 +65,8 @@ font-size: x-large;
     padding: 10px;
 }
 
-/* How To Play Pop up(background) */
+/* How To Play Pop up(background) 
+    Code from w3Schools */
 .modal {
     display: none;
     position: fixed;
@@ -80,7 +81,8 @@ font-size: x-large;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content */
+/* Modal Content  
+    Code from w3Schools */
 .modal-content {
     background-color: rgba(0, 0, 0, 0.7);
     margin: auto;
@@ -90,7 +92,8 @@ font-size: x-large;
     text-align: center;
 }
 
-/* The Close Button */
+/* The Close Button  
+    Code from w3Schools */
 .close {
     color: #aaaaaa;
     float: right;
